@@ -1,7 +1,9 @@
 package net.cestog.lunartravel.item;
 
 import net.cestog.lunartravel.LunarTravel;
+import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ToolMaterial;
 import net.minecraft.world.item.equipment.ArmorMaterials;
 import net.minecraft.world.item.equipment.ArmorType;
@@ -15,26 +17,40 @@ public class LunarItems {
 
     //  Ertsen en Ruwe materialen
     public static final DeferredItem<Item> RAW_DESH = ITEMS.registerSimpleItem("raw_desh");
-    public static final DeferredItem<Item> RAW_OSTRUM = ITEMS.registerSimpleItem("raw_ostrum");
+    public static final DeferredItem<Item> RAW_LUNAR = ITEMS.registerSimpleItem("raw_lunar");
     public static final DeferredItem<Item> RAW_ALUMINIUM = ITEMS.registerSimpleItem("raw_aluminium");
     public static final DeferredItem<Item> RAW_TITANIUM = ITEMS.registerSimpleItem("raw_titanium");
-    public static final DeferredItem<Item> RAW_NICKEL = ITEMS.registerSimpleItem("raw_titanium");
+    public static final DeferredItem<Item> RAW_NICKEL = ITEMS.registerSimpleItem("raw_nickel");
     public static final DeferredItem<Item> RAW_METEORITE_IRON = ITEMS.registerSimpleItem("raw_meteorite_iron");
     public static final DeferredItem<Item> RAW_LITHIUM = ITEMS.registerSimpleItem("raw_lithium");
-    public static final DeferredItem<Item> RAW_PLATINA = ITEMS.registerSimpleItem("raw_lithium");
+    public static final DeferredItem<Item> RAW_PLATINA = ITEMS.registerSimpleItem("raw_platina");
 
     public static final DeferredItem<Item> CHEMICALLY_PURIFIED_CARBON = ITEMS.registerSimpleItem("purified_carbon");
 //    Ingots
     public static final DeferredItem<Item> DESH_INGOT = ITEMS.registerSimpleItem("desh_ingot");
-    public static final DeferredItem<Item> OSTRUM_INGOT = ITEMS.registerSimpleItem("ostrum_ingot");
+    public static final DeferredItem<Item> LUNAR_INGOT = ITEMS.registerSimpleItem("lunar_ingot");
     public static final DeferredItem<Item> ALUMINIUM_INGOT = ITEMS.registerSimpleItem("aluminium_ingot");
     public static final DeferredItem<Item> TITANIUM_INGOT = ITEMS.registerSimpleItem("titanium_ingot");
-    public static final DeferredItem<Item> NICKEL_INGOT = ITEMS.registerSimpleItem("titanium_ingot");
+    public static final DeferredItem<Item> NICKEL_INGOT = ITEMS.registerSimpleItem("nickel_ingot");
     public static final DeferredItem<Item> METEORITE_IRON_INGOT = ITEMS.registerSimpleItem("meteorite_iron_ingot");
     public static final DeferredItem<Item> LITHIUM_INGOT = ITEMS.registerSimpleItem("lithium_ingot");
     public static final DeferredItem<Item> PLATINA_INGOT = ITEMS.registerSimpleItem("platina_ingot");
 
-
+//    Vloeistoffen
+//    public static final DeferredItem<Item> CRUDE_OIL_BUCKET = ITEMS.registerItem(
+//            "crude_oil_bucket",
+//        props -> new BucketItem(
+//                LunarFluids.CRUDE_OIL.get(),
+//                props.stacksTo(1).craftRemainder(Items.BUCKET)
+//        )
+//);
+//    public static final DeferredItem<Item> KEROSINE_BUCKET = ITEMS.registerItem(
+//            "kerosine_bucket",
+//        props -> new BucketItem(
+//                LunarFluids.KEROSINE.get(),
+//                props.stacksTo(1).craftRemainder(Items.BUCKET)
+//        )
+//);
 
 
     // Geperste platen

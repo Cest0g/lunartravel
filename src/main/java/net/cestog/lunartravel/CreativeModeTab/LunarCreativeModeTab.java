@@ -23,25 +23,47 @@ public class LunarCreativeModeTab {
                     .displayItems((params, output) -> {
 //                        Items
                         output.accept(LunarItems.RAW_DESH.get());
+                        output.accept(LunarItems.RAW_LUNAR.get());
+                        output.accept(LunarItems.RAW_PLATINA.get());
+                        output.accept(LunarItems.RAW_TITANIUM.get());
+                        output.accept(LunarItems.RAW_METEORITE_IRON.get());
+                        output.accept(LunarItems.RAW_LITHIUM.get());
+                        output.accept(LunarItems.RAW_NICKEL.get());
+                        output.accept(LunarItems.RAW_ALUMINIUM.get());
+
+
+//                        INGOTS
                         output.accept(LunarItems.DESH_INGOT.get());
-                        output.accept(LunarItems.RAW_OSTRUM.get());
-                        output.accept(LunarItems.OSTRUM_INGOT.get());
+                        output.accept(LunarItems.LUNAR_INGOT.get());
+                        output.accept(LunarItems.LITHIUM_INGOT.get());
+                        output.accept(LunarItems.PLATINA_INGOT.get());
+                        output.accept(LunarItems.METEORITE_IRON_INGOT.get());
+                        output.accept(LunarItems.ALUMINIUM_INGOT.get());
+                        output.accept(LunarItems.TITANIUM_INGOT.get());
+                        output.accept(LunarItems.NICKEL_INGOT.get());
                         output.accept(LunarItems.CHEMICALLY_PURIFIED_CARBON.get());
+
+
+//                        Compressed resources
                         output.accept(LunarItems.COMPRESSED_IRON.get());
                         output.accept(LunarItems.COMPRESSED_DESH.get());
+
+//                        Plates
                         output.accept(LunarItems.TIER_1_HEAVY_DUTY_PLATE.get());
                         output.accept(LunarItems.TIER_2_HEAVY_DUTY_PLATE.get());
+//                        Circuits
                         output.accept(LunarItems.BASIC_CIRCUIT.get());
                         output.accept(LunarItems.ADVANCED_CIRCUIT.get());
+//                        Parts
                         output.accept(LunarItems.OXYGEN_VENT.get());
                         output.accept(LunarItems.OXYGEN_CONCENTRATOR.get());
                         output.accept(LunarItems.ROCKET_FIN.get());
                         output.accept(LunarItems.ROCKET_ENGINE.get());
                         output.accept(LunarItems.NOSE_CONE.get());
+//                        Oxygen tanks
                         output.accept(LunarItems.SMALL_OXYGEN_TANK.get());
                         output.accept(LunarItems.MEDIUM_OXYGEN_TANK.get());
                         output.accept(LunarItems.LARGE_OXYGEN_TANK.get());
-                        output.accept(LunarItems.ROCKET.get());
 
 //                        Tools
                         output.accept(LunarItems.STEEL_HAMMER.get());

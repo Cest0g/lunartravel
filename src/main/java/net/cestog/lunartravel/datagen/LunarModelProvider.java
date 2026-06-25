@@ -19,15 +19,25 @@ public class LunarModelProvider extends ModelProvider {
 
 //        Rauwe materialen
         itemModels.generateFlatItem(LunarItems.RAW_DESH.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(LunarItems.RAW_OSTRUM.get(), ModelTemplates.FLAT_ITEM);
-//        itemModels.generateFlatItem(LunarItems.RAW_ALUMINIUM.get(), ModelTemplates.FLAT_ITEM);
-//        itemModels.generateFlatItem(LunarItems.RAW_TITANIUM.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(LunarItems.RAW_LUNAR.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(LunarItems.RAW_ALUMINIUM.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(LunarItems.RAW_TITANIUM.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(LunarItems.RAW_NICKEL.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(LunarItems.RAW_LITHIUM.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(LunarItems.RAW_PLATINA.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(LunarItems.RAW_METEORITE_IRON.get(), ModelTemplates.FLAT_ITEM);
 
 
 
 //      Ingots
         itemModels.generateFlatItem(LunarItems.DESH_INGOT.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(LunarItems.OSTRUM_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(LunarItems.LUNAR_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(LunarItems.ALUMINIUM_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(LunarItems.TITANIUM_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(LunarItems.NICKEL_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(LunarItems.LITHIUM_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(LunarItems.PLATINA_INGOT.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(LunarItems.METEORITE_IRON_INGOT.get(), ModelTemplates.FLAT_ITEM);
 
 
 
