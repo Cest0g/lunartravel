@@ -18,10 +18,12 @@ public class LunarCreativeModeTab {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
     public static final Supplier<CreativeModeTab> LUNAR_TRAVEL = CREATIVE_MODE_TABS.register("lunartravel",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(LunarItems.OSTRUM_INGOT.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(LunarItems.ROCKET.get()))
                     .title(Component.translatable("creativetab.lunartravel.lunar_blocks"))
                     .displayItems((params, output) -> {
+//                        Items
                         output.accept(LunarItems.RAW_DESH.get());
+                        output.accept(LunarItems.DESH_INGOT.get());
                         output.accept(LunarItems.RAW_OSTRUM.get());
                         output.accept(LunarItems.OSTRUM_INGOT.get());
                         output.accept(LunarItems.CHEMICALLY_PURIFIED_CARBON.get());
@@ -39,9 +41,14 @@ public class LunarCreativeModeTab {
                         output.accept(LunarItems.SMALL_OXYGEN_TANK.get());
                         output.accept(LunarItems.MEDIUM_OXYGEN_TANK.get());
                         output.accept(LunarItems.LARGE_OXYGEN_TANK.get());
+                        output.accept(LunarItems.ROCKET.get());
+
+//                        Tools
                         output.accept(LunarItems.STEEL_HAMMER.get());
                         output.accept(LunarItems.DESH_SWORD.get());
                         output.accept(LunarItems.DESH_PICKAXE.get());
+
+//                        Armor
                         output.accept(LunarItems.SPACE_SUIT_HELMET.get());
                         output.accept(LunarItems.SPACE_SUIT_CHESTPLATE.get());
                         output.accept(LunarItems.SPACE_SUIT_LEGGINGS.get());

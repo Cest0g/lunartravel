@@ -17,10 +17,20 @@ public class LunarModelProvider extends ModelProvider {
     @Override
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
 
+//        Rauwe materialen
         itemModels.generateFlatItem(LunarItems.RAW_DESH.get(), ModelTemplates.FLAT_ITEM);
-        itemModels.generateFlatItem(LunarItems.DESH_INGOT.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(LunarItems.RAW_OSTRUM.get(), ModelTemplates.FLAT_ITEM);
+//        itemModels.generateFlatItem(LunarItems.RAW_ALUMINIUM.get(), ModelTemplates.FLAT_ITEM);
+//        itemModels.generateFlatItem(LunarItems.RAW_TITANIUM.get(), ModelTemplates.FLAT_ITEM);
+
+
+
+//      Ingots
+        itemModels.generateFlatItem(LunarItems.DESH_INGOT.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(LunarItems.OSTRUM_INGOT.get(), ModelTemplates.FLAT_ITEM);
+
+
+
         itemModels.generateFlatItem(LunarItems.CHEMICALLY_PURIFIED_CARBON.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(LunarItems.COMPRESSED_IRON.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(LunarItems.COMPRESSED_DESH.get(), ModelTemplates.FLAT_ITEM);
@@ -30,6 +40,7 @@ public class LunarModelProvider extends ModelProvider {
         itemModels.generateFlatItem(LunarItems.ADVANCED_CIRCUIT.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(LunarItems.OXYGEN_VENT.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(LunarItems.OXYGEN_CONCENTRATOR.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(LunarItems.ROCKET.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(LunarItems.ROCKET_FIN.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(LunarItems.ROCKET_ENGINE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(LunarItems.NOSE_CONE.get(), ModelTemplates.FLAT_ITEM);
