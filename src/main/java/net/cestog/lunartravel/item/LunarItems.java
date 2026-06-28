@@ -1,6 +1,7 @@
 package net.cestog.lunartravel.item;
 
 import net.cestog.lunartravel.LunarTravel;
+import net.cestog.lunartravel.fluid.LunarFluids;
 import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -8,6 +9,7 @@ import net.minecraft.world.item.ToolMaterial;
 import net.minecraft.world.item.equipment.ArmorMaterials;
 import net.minecraft.world.item.equipment.ArmorType;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -37,20 +39,12 @@ public class LunarItems {
     public static final DeferredItem<Item> PLATINA_INGOT = ITEMS.registerSimpleItem("platina_ingot");
 
 //    Vloeistoffen
-//    public static final DeferredItem<Item> CRUDE_OIL_BUCKET = ITEMS.registerItem(
-//            "crude_oil_bucket",
-//        props -> new BucketItem(
-//                LunarFluids.CRUDE_OIL.get(),
-//                props.stacksTo(1).craftRemainder(Items.BUCKET)
-//        )
-//);
-//    public static final DeferredItem<Item> KEROSINE_BUCKET = ITEMS.registerItem(
-//            "kerosine_bucket",
-//        props -> new BucketItem(
-//                LunarFluids.KEROSINE.get(),
-//                props.stacksTo(1).craftRemainder(Items.BUCKET)
-//        )
-//);
+public static final DeferredItem<BucketItem> CRUDE_OIL_BUCKET = ITEMS.registerItem(
+        "crude_oil_bucket",
+        properties -> new BucketItem(LunarFluids.CRUDE_OIL.get(), properties),
+        () -> new Item.Properties().stacksTo(1).craftRemainder(Items.BUCKET)
+);
+
 
 
     // Geperste platen

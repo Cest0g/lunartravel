@@ -9,7 +9,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 import net.cestog.lunartravel.datagen.provider.LunarGlobalLootModifier;
 import net.cestog.lunartravel.datagen.provider.LunarRecipeProvider;
-import net.cestog.lunartravel.datagen.provider.LunarLootTableProvider;
+import net.cestog.lunartravel.datagen.LunarLootTableProvider;
 @EventBusSubscriber(modid = LunarTravel.MODID)
 public class LunarDataGen {
     @SubscribeEvent

@@ -1,27 +1,41 @@
 package net.cestog.lunartravel.block;
 
 import net.cestog.lunartravel.LunarTravel;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.level.block.Block;
+import net.cestog.lunartravel.fluid.LunarFluids;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+
+
 public class LunarBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(LunarTravel.MODID);
 
-//    public static final DeferredBlock<Block> MY_BETTER_BLOCK = BLOCKS.register(
-//            "my_better_block",
-//            registryName -> new Block(BlockBehaviour.Properties.of()
-//                    .setId(ResourceKey.create(Registries.BLOCK, registryName))
-//                    .destroyTime(2.0f)
-//                    .explosionResistance(10.0f)
-//                    .sound(SoundType.GRAVEL)
-//                    .lightLevel(state -> 7)
-//            ));
+    public static final DeferredBlock<LiquidBlock> CRUDE_OIL = BLOCKS.registerBlock(
+            "crude_oil",
+            properties -> new LiquidBlock(LunarFluids.CRUDE_OIL.get(), properties),
+            () -> BlockBehaviour.Properties.of()
+                    .liquid()
+                    .noLootTable()
+                    .noCollision()
+                    .replaceable()
+                    .pushReaction(PushReaction.DESTROY)
+                    .sound(SoundType.EMPTY)
+                    .strength(100)
+                    .lightLevel(_ -> 0)
+    );
+    public static final DeferredBlock<CrudeOilCauldronBlock> CRUDE_OIL_CAULDRON = BLOCKS.registerBlock(
+            "crude_oil_cauldron",
+            CrudeOilCauldronBlock::new,
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.CAULDRON).lightLevel(_ -> 0)
+    );
+
+
 
 
 

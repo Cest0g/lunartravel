@@ -1,5 +1,6 @@
 package net.cestog.lunartravel.datagen.provider;
 
+import net.cestog.lunartravel.block.LunarBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -14,7 +15,7 @@ public class LunarBlockTagProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(BlockTags.MINEABLE_WITH_PICKAXE);
-
+        tag(BlockTags.CAULDRONS).add(LunarBlocks.CRUDE_OIL_CAULDRON.get());
         tag(BlockTags.NEEDS_IRON_TOOL);
 
 

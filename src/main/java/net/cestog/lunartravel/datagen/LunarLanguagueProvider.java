@@ -1,5 +1,7 @@
 package net.cestog.lunartravel.datagen;
 
+import net.cestog.lunartravel.block.LunarBlocks;
+import net.cestog.lunartravel.fluid.LunarFluids;
 import net.cestog.lunartravel.item.LunarItems;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.LanguageProvider;
@@ -72,8 +74,10 @@ public class LunarLanguagueProvider extends LanguageProvider {
         add(LunarItems.SPACE_SUIT_LEGGINGS.get(), "Space Leggings");
         add(LunarItems.SPACE_SUIT_BOOTS.get(), "Space Boots");
 
-
-
+//      Fluids
+        add(LunarFluids.CRUDE_OIL_TYPE.getRegisteredName(), "Crude Oil");
+        add(LunarItems.CRUDE_OIL_BUCKET.get(), "Crude Oil Bucket");
+        add(LunarBlocks.CRUDE_OIL_CAULDRON.get(), "Crude Oil Cauldron");
 
 //        CreativeModeTab
         add("creativetab.lunartravel.lunar_blocks", "Lunar Travel");

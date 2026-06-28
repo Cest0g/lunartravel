@@ -1,10 +1,12 @@
 {
+  "block.lunartravel.crude_oil_cauldron": "Crude Oil Cauldron",
   "creativetab.lunartravel.lunar_blocks": "Lunar Travel",
   "item.lunartravel.advanced_circuit": "Advanced Circuit",
   "item.lunartravel.aluminium_ingot": "Aluminium Ingot",
   "item.lunartravel.basic_circuit": "Basic Circuit",
   "item.lunartravel.compressed_desh": "Compressed Desh",
   "item.lunartravel.compressed_iron": "Compressed Iron",
+  "item.lunartravel.crude_oil_bucket": "Crude Oil Bucket",
   "item.lunartravel.desh_ingot": "Desh Ingot",
   "item.lunartravel.desh_pickaxe": "Desh Pickaxe",
   "item.lunartravel.desh_sword": "Desh Sword",
@@ -38,5 +40,6 @@
   "item.lunartravel.steel_hammer": "Steel Hammer",
   "item.lunartravel.tier_1_heavy_duty_plate": "Tier 1 Heavy Duty Plate",
   "item.lunartravel.tier_2_heavy_duty_plate": "Tier 2 Heavy Duty Plate",
-  "item.lunartravel.titanium_ingot": "Titanium Ingot"
+  "item.lunartravel.titanium_ingot": "Titanium Ingot",
+  "lunartravel:crude_oil": "Crude Oil"
 }

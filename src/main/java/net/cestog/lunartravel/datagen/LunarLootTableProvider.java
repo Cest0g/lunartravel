@@ -1,4 +1,4 @@
-package net.cestog.lunartravel.datagen.provider;
+package net.cestog.lunartravel.datagen;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -7,15 +7,8 @@ import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.storage.loot.LootPool;
-import net.minecraft.world.level.storage.loot.LootTable;
-import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
-import net.minecraft.world.level.storage.loot.predicates.ExplosionCondition;
-import net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition;
-import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
-
+import net.cestog.lunartravel.block.LunarBlocks;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
@@ -31,20 +24,24 @@ public class LunarLootTableProvider extends LootTableProvider {
                 registries
         );
     }
+
     private static final class ModLootTableSubProvider extends BlockLootSubProvider {
         ModLootTableSubProvider(HolderLookup.Provider registries) {
             super(Set.of(), FeatureFlags.DEFAULT_FLAGS, registries);
         }
 
+        @Override
+        protected Iterable<Block> getKnownBlocks() {
+            return LunarBlocks.BLOCKS.getEntries()
+                    .stream()
+                    .map(e -> (Block) e.value())
+                    .toList();
+        }
 
         @Override
         protected void generate() {
-
-        }
-        @Override
-        protected Iterable<Block> getKnownBlocks() {
-            return List.of(
-            );
+            dropOther(LunarBlocks.CRUDE_OIL_CAULDRON.get(), Items.CAULDRON);
         }
     }
 }
+

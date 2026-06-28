@@ -1,6 +1,7 @@
 package net.cestog.lunartravel.CreativeModeTab;
 
 import net.cestog.lunartravel.LunarTravel;
+import net.cestog.lunartravel.block.LunarBlocks;
 import net.cestog.lunartravel.item.LunarItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -75,6 +76,9 @@ public class LunarCreativeModeTab {
                         output.accept(LunarItems.SPACE_SUIT_CHESTPLATE.get());
                         output.accept(LunarItems.SPACE_SUIT_LEGGINGS.get());
                         output.accept(LunarItems.SPACE_SUIT_BOOTS.get());
+
+//                        Buckets
+                        output.accept(LunarItems.CRUDE_OIL_BUCKET.get());
 
                    })
                     .build()
